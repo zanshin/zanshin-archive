@@ -1,0 +1,86 @@
+/* blogger style sheet  3.5.2001 */
+
+a	{
+	text-decoration : none;
+	color           : cornflowerblue;
+	font-size       : x-small;
+	font-weight     : bold;
+	}
+
+a:hover	{
+	text-decoration : underline;
+	color           : crimson;
+	font-size       : x-small;
+	font-weight     : bold;
+	}
+
+P 	{
+	font-family    : verdana,arial,sans-serif; 
+	font-size      : 10pt; 
+	line-height    : 150%; 
+	text-indent    : 3em;
+	text-align     : justify;
+	}
+
+.normal 	{
+	font-family    : verdana,arial,sans-serif; 
+	font-size      : 10pt; 
+	line-height    : 150%; 
+	text-align     : center;
+	}
+
+
+.large  {
+	font-family : verdana,arial,sans-serif;
+	font-weight : normal;
+	font-size   : 14pt;
+	line-height : 125%;
+	text-align  : center;
+	}
+
+.small  {
+	font-family : verdana,arial,sans-serif;
+	font-weight : normal;
+	font-size   : 8pt;
+	line-height : 125%;
+	color       : lavender;
+	}
+
+.quote  {
+	font-family : verdana,arial,sans-serif;
+	font-weight : strong;
+	font-size   : 8pt;
+	line-height : 125%;
+	color       : cc9966;
+	text-align  : center;
+	}
+
+.header {
+	font-family : verdana,arial,sans-serif;
+	font-weight : normal;
+	font-size   : x-small;
+	color       : cc9966;
+	}
+
+.zanshin {
+	font-family : verdana,arial,sans-serif;
+	font-weight : normal;
+	font-size   : large;
+	color       : crimson;
+	}
+
+.date  {
+	font-family : verdana,arial,sans-serif;
+	font-weight : normal;
+	font-size   : x-small;
+	color 	    : b0c4de;
+}
+
+.myLink  {
+	font-family : verdana,arial,sans-serif;
+	font-weight : bold;
+	font-size : x-small;
+	color : "#ccccff";
+	text-align : center;
+}
+

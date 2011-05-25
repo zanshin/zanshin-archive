@@ -1,0 +1,44 @@
+/* Calendar*/
+a  {
+	text-decoration : none;
+	color : #6495ED;
+}
+
+a:hover  {
+	text-decoration : underline;
+	color : #ffff99;
+}
+
+.month  {
+	font-family : tahoma,verdana,arial,sans-serif;
+	font-weight : bold;
+	font-size : x-small;
+	color : "#ffff66";
+	border-style : double;
+	border-color : "#6495ed";
+}
+
+.year  {
+	font-family : tahoma,verdana,arial,sans-serif;
+	font-weight : bold;
+	font-size : x-large;
+	color : darkred;
+	border-color : "#6495ed";
+}
+
+.date  {
+	font-family : tahoma,verdana,arial,sans-serif;
+	font-weight : normal;
+	font-size : x-small;
+	color : "#ccccff";
+	text-align : center;
+}
+
+.dateLink  {
+	font-family : tahoma,verdana,arial,sans-serif;
+	font-weight : bold;
+	font-size : x-small;
+	color : "#ffff99";
+	text-align : center;
+}
+
