@@ -1,162 +1,0 @@
-<HTML>
-<HEAD>
-<TITLE>
-Mark's Homepage 
-</TITLE>
-
-<SCRIPT LANGUAGE="JavaScript">
-<!-- Beginning of JavaScript Applet -------------------
-/* Copyright (C)1996 Web Integration Systems, Inc. DBA Websys, Inc.
-   All Rights Reserved.
-   This applet can be re-used or modified, if credit is given in 
-   the source code.
-   We will not be held responsible for any unwanted effects due to the 
-   usage of this applet or any derivative.  No warrantees for usability 
-   for any specific application are given or implied.
-   Chris Skinner, January 30th, 1996.
-*/
-
-function scrollit_r2l(seed)
-{
-        var m1 = "Welcome To My Waste of Bandwidth  .  .  .  .  ";
-        var m2 = "Please make yourself at home and explore some of my pages. "; 
-        var m3 = "Or, visit some of my favorite sites.  While you are here ";
-        var m4 = "please take time to sign my guestbook and let me know "; 
-        var m5 = "what you think of my efforts.  Thanks... ";
-
-        var msg=m1+m2+m3+m4+m5;
-        var out = " ";
-        var c   = 1;
-
-        if (seed > 100) {
-                seed--;
-                var cmd="scrollit_r2l(" + seed + ")";
-                timerTwo=window.setTimeout(cmd,100);
-        }
-        else if (seed <= 100 && seed > 0) {
-                for (c=0 ; c < seed ; c++) {
-                        out+=" ";
-                }
-                out+=msg;
-                seed--;
-                var cmd="scrollit_r2l(" + seed + ")";
-                    window.status=out;
-                timerTwo=window.setTimeout(cmd,100);
-        }
-        else if (seed <= 0) {
-                if (-seed < msg.length) {
-                        out+=msg.substring(-seed,msg.length);
-                        seed--;
-                        var cmd="scrollit_r2l(" + seed + ")";
-                        window.status=out;
-                        timerTwo=window.setTimeout(cmd,100);
-                }
-                else {
-                        window.status=" ";
-                        timerTwo=window.setTimeout("scrollit_r2l(100)",75);
-                }
-        }
-}
-// -- End of JavaScript code -------------- -->
-</SCRIPT>
-</head> 
-<body onLoad="timerONE=window.setTimeout('scrollit_r2l(100)',500);" bgcolor="ffeeee"> 
-
-<center>
-<BLOCKQUOTE>
-<I>&quot;People who don't Think probably don't have Brains; rather,
-they have grey fluff that's blown into their heads by mistake.&quot;</I> - Winnie-the-Pooh</BLOCKQUOTE>
-
-<img src="graphics/eyebar.gif">
-</CENTER>
-
-<br>
-<center>
-<table width="80%" border=0>
-<th colspan=3><Font SIZE = "+2">My Personal Web Pages</FONT></th>
-<tr>
-<td align=center width=300> <A HREF = "masites.htm"><img src="graphics/mabar.gif"></A></td>
-<td align=center width=300> <A HREF = "places.htm"><img src="graphics/findbar.gif"></A></td>
-<td align=center width=300> <A HREF = "software.htm"><img src="graphics/softbar.gif"></a></td>
-</tr>
-</table>
-<table width="80%" border=0>
-<th colspan=2>
-<tr>
-<td align=center width=300> <A HREF = "resume.htm"><img src="graphics/resbar.gif"></A></td>
-<td align=center width=300> <A HREF = "zanshin.htm"><img src="graphics/zanshin.gif"></A></td>
-</tr>
-</table>
-<table width="80%" border=0>
-<th colspan=3>
-<td align=center width=300> <A HREF = "count.htm"><img src="graphics/attrit.gif"></a></td>
-<td align=center width=300> <A HREF = "cycle.htm"><img src="graphics/cyclebar.gif"></A></td>
-<td align=center width=300> <A HREF = "misc.htm"><img src="graphics/misc.gif"></A></td>
-</tr>
-</table>
-
-<br>
-<table width="90%" border=0>
-<th colspan=9><Font SIZE = "+2">Visit some of my Favorite Sites</FONT></th>
-<tr>
-<td align=center width=300> <A HREF = "http://www.neosoft.com/~hav/home.html">Horace's Home Page</A></td>
-<td align=center width=300> <A HREF = "http://www.tucows.com">The Ultimate Collection of Winsock Software</A></td>
-<td align=center width=300> <A HREF = "http://sunsite.unc.edu/jembin/mb.pl">Meyers-Briggs Personality Test</A></td>
-<td align=center width=300> <A HREF = "http://postcards.www.media.mit.edu/Postcards">Electronic Postcards</A></td>
-
-<td align=center width=300> <A HREF = "http://www.ts.umu.se/~spaceman/camera.html">Peeping Tom Homepage</a></td>
-<td align=center width=300> <A HREF = "http://www.landsend.com/">Land's End Online Catalog</A></td>
-<td align=center width=300> <A HREF = "http://www.llbean.com">L.L. Bean Online Catalog</A></td>
-<td align=center width=300> <A HREF = "http://www.sullivan1.com/springfield">Online Springfield</a></td>
-
-<td align=center width=300> <a href = "http://www.sys1.com/trip/flights/flight.htm">Trip Link Flight Information</a></td>					
-<td align=center width=300> <a href = "http://www.csd.uu.se/~d94her/calvin/jumpstation.html">
-					<img border=0 src="graphics/edge.gif"></a></td>
-</tr>
-</table>
-<center>
-<BLOCKQUOTE>
-This page has been accessed 
-<IMG SRC = "http://counter.digits.com/wc/-c/2/mark_h_nichols ALIGN=absmiddle WIDTH=90 HEIGHT=20 BORDER=0">
-times since November 1995. Thanks. Please come again. While you're here please sign my 
-<a href = "guestbook.htm">guestbook</a>. 
-<BR>
-</BLOCKQUOTE>
-
-<TABLE BORDER=0>
-        <TR>
-                	<TD ROWSPAN=2><a href = "http://www.catalyst-highlands.co.uk/dunblane.htm">
-					<img border=1 src="graphics/childrse.gif" align="top"></a></TD>
-			<TD><A HREF = "http://www.netscape.com">
-					<IMG BORDER=1 SRC = "graphics/netnow3.gif" ></A></TD>                	
-			<TD><a href = "mailto:mnichols@zanshin.net">
-					<img border=1 src="graphics/email.gif" ></a></TD>
-        </TR>
-        <TR>
-               	<TD><A HREF = "http://www.netscape.com/comprod/mirror/index.html">
-					<IMG BORDER=1 SRC = "graphics/netscap2.gif" align="bot"></A></TD> 
-			<TD><A HREF = "http://www.eff.org/blueribbon.html">
-					<IMG BORDER=1 SRC="graphics/ribbon.gif" ></A></TD> 
-        </TR>
-</TABLE>
-
-<br>
-<FONT SIZE = "-1">
-This page is best when viewed with Netscape 2.0 or 3.0 Beta.
-<br>
-<FONT SIZE = "-1">
-Thanks to the good folks at 
-<A HREF = "http://www.fgi.net">FGInet</A>
- for providing space for this page.  
-
-</FONT>
-
-Copyright (C) 1995 RemainingMind Software, Inc. 
-Layout by Mark H. Nichols 
-<BR>
-<CITE>Updated: 19 July 1996</CITE>
-</FONT>
-</CENTER>
-</BODY>
-</HTML>
-
