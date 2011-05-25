@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="Mark H. Nichols" />
+<meta name="description" content="Web log, book reviews, film picks, nerdliness, geekdom and writings." />
+<meta name="keywords" content="web log, blog, Mark, Nichols, emotions, growth, life, social issues, programmer, programming, software developer, geek" />
+<meta name="robots" content="index, nofollow" />
+<meta name="MSSmartTagsPreventParsing" content="TRUE" />
+
+<link
+		rel="stylesheet"
+		type="text/css"
+		media="all"
+		href="css/panache.css"
+	/>
+	
+	
+<style>
+td
+{
+	padding: 0 10px 0 0 ;
+	color: black ;
+	font-family: Verdana, Trebuchet, Sans ;
+	font-size: 10px ;
+	line-height: 20px ;
+	border-bottom: #dddddd ;
+	border-width: 0 0 1px 0;
+	border-style: none none solid none ;
+}
+
+thead
+{
+	font-weight: bold ;
+}
+
+p
+{
+	font-family: Verdana, Trebuchet, Sans ;
+	font-size: small ;
+	line-height: 150% ;
+}
+
+h3
+{
+	font-family: Georgia, Times, Serif ;
+	font-size: large ;
+	font-style: normal ;
+	font-weight: normal ;
+}
+
+code
+{
+	font-size: medium ;
+}
+
+a:link
+{
+	color: blue ;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline ;
+}
+
+a:visited
+{
+	color: red ;
+	text-decoration: underline ;
+}
+
+</style>
+
+<title>zanshin .:. because not enough web sites start with the letter Z</title>
+
+<!--
+  Zanshin.net 
+  Version 11.0 (beta)
+  
+  This is roughly the eleventh iteration of my personal website. Zansin.net
+  has been online continuously since the fall of 1995. Originally it was
+  my own portal site, before protals were popular. Gradually the site focus 
+  shifted away from the external towards the internal, just as my personal
+  focus was shifting away from outside me to inside me.
+  
+  I have been fortunate to find and be able to utilize the fine work of
+  several people in the development of this site. Where their efforts are
+  used, credit is given. I fully support intellectual property sharing.
+  Economic advantage based on an idea is a practice whose time is drawing
+  to a close. The fine hair to split here is giving proper credit. I have
+  not knowingly used any scripts, images, or other artifacts without giving
+  proper credit. All software used to create this site was either open
+  source, or purchased. No pirated software was used in the making of this
+  site.
+  
+  Enjoy. 
+  
+  mark 4 april 2003
+-->
+
+
+<script type="text/javascript">
+
+var frame
+var left
+var nav
+var inited
+function init() {
+	window.onresize=moveNav;
+	if (!document.createElement) return //begone, old browser
+	frame=document.getElementById('frame')
+	left=document.getElementById('left')
+	nav=document.createElement("DIV")
+	nav.style.position="absolute";
+	nav.style.lineHeight=left.style.lineHeight
+	nav.style.fontSize=left.style.fontSize
+	nav.style.padding=left.style.padding
+	nav.style.width=left.style.width
+	nav.style.height=getMyProperty(left,'height')
+	nav.style.textAlign=left.style.textAlign
+	
+	inited = true
+	moveNav()
+	nav.innerHTML=left.innerHTML;
+	document.body.appendChild(nav)
+	left.style.visibility='hidden';
+	watchForScroll()
+	}
+	
+function getMyProperty(obj,prop) {
+	if (document.all) {
+		if (prop=='top') return obj.offsetTop+document.body.scrollTop+'px';
+		if (prop=='left') return obj.offsetLeft+'px';
+		if (prop=='height') return obj.offsetHeight+'px';
+	} else {
+		if (prop=='top') return (window.pageYOffset+parseInt(document.defaultView.getComputedStyle(obj,'').getPropertyValue('top')))+'px';
+		if (prop=='left') return document.defaultView.getComputedStyle(obj,'').getPropertyValue('left');
+		if (prop=='height') return document.defaultView.getComputedStyle(obj,'').getPropertyValue('height');
+		}
+	}
+
+function moveNav() {
+	if (!inited) return false;
+	newLeft=getMyProperty(frame,'left');
+	newTop=getMyProperty(left,'top');
+	if (parseInt(newTop)+parseInt(getMyProperty(left,'height')) > parseInt(getMyProperty(frame,'height'))-30){
+		newTop=(parseInt(getMyProperty(frame,'height'))-30-parseInt(nav.style.height))+'px'
+		}
+	nav.style.left=newLeft
+	nav.style.top=newTop
+	}
+
+lastS = 0
+thisS = 0
+function watchForScroll() {
+	thisS=(document.body.scrollTop)?document.body.scrollTop:window.pageYOffset
+	if (thisS!=lastS) {
+		lastS=thisS
+		moveNav()
+	}
+	setTimeout('watchForScroll()',50)
+	}
+	
+</script>
+</head><body onload="init()">
+
+<div id="frame" style="">
+	<div id="toptab"><div class="tabtext">my diversions</div></div>
+	<div id="left" style="float:left;
+		text-align:right;
+		font-size:10px; line-height: 17px;
+		width:75px;">
+		<div id="leftlinks">
+		   <b>i/me/mine</b><br />
+		   <a href="http://www.zanshin.net/" 
+		      onclick="return true;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='zanshin.net';return true" 
+		      onmouseout="window.status='';return true">home </a><br />
+		   <a href="faq.html" 
+		      onclick="return true;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='about the author';return true" 
+		      onmouseout="window.status='';return true">about </a><br />
+		   <a href="don't click on that" 
+		      onclick="return false;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='1998-2001';return true" 
+		      onmouseout="window.status='';return true">archives </a><br />
+		   <a href="don't click on that" 
+		      onclick="return false;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='1998-2001';return true" 
+		      onmouseout="window.status='';return true">diversions </a><br />
+		   <br />
+		   <b>etcetera</b><br />
+		   <a href="links.html" 
+		      onclick="return true;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='other voices, other rooms';return true" 
+		      onmouseout="window.status='';return true">links </a><br />
+		   <a href="http://www.zanshin.net/refer/index.php" 
+		      onclick="return true;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='some of you came from these places';return true" 
+		      onmouseout="window.status='';return true">referers </a><br />
+
+		   <script type="text/javascript">
+			<!--
+			var d=new Array(
+			   140,158,115,214,138,114,101,214,130,153,
+			   127,218,103,156,141,147,143,129,106,190,
+			   108,115,137,183,137,105,137,111,124,213,
+  			   115,140,102,195,125,128,142,176,113,210,
+			   143,124,127,157,116,219,140,127,146,108,
+			   101,225,128,113,106,165,132,197,108,108,
+			   133,149,108,190,130,217,107,111,129,151,
+			   139,184,126,215,123,200,138,159,118,161,
+			   117,200,129,103,140,116,115,162,111,167,
+			   122,194,131,143,137,226
+			);
+			var t = new Array(); 
+
+			var i=0,ii=0, n=0,nn=0; c=0; while(c<96) { 
+			for (var f0=184; f0<=298; f0++) { i+=f0; n+=f0; if (c>=96) break; 
+			for (var f1=200; f1<=311; f1++) { i+=f1; n+=f1; if (c>=96) break; 
+			if (f1==310) continue; 
+			for (var f2=116; f2<=292; f2++) { i+=f2; n+=f2; if (c>=96) break; 
+			if ( f2==(n+i) || (n+i)==179 ) continue; 
+			for (var f3=191; f3<=390; f3++) { i+=f3; n+=f3; if (c>=96) break; 
+			if (f3==214) continue; 
+			if ( f3==(n+i) || (n+i)==297 ) continue; 
+			for (var f4=168; f4<=312; f4++) { i+=f4; n+=f4; if (c>=96) break; 
+			if ( (f4+n-i) == 227 ) break; 
+			for (var f5=175; f5<=325; f5++) { i+=f5; n+=f5; if (c>=96) break; 
+			if ( (f5+n-i) == 317 ) break; 
+			for (var f6=188; f6<=388; f6++) { i+=f6; n+=f6; if (c>=96) break; 
+			if ( (f6+n-i) == 250 ) break; 
+			n%=127; i%=48; ii=i+d[c++]; nn=n+d[c++];nn%=127; ii%=48; t[ii]=nn; 
+			}}}}}}}}
+
+			i=0; document.write('<a href="'); 
+			while( t[i] ) document.write('&#'+t[i++]+';'); 
+			i++; document.write('" title="'); 
+			while( t[i] ) document.write('&#'+t[i++]+';'); 
+			i++; document.write('">'); 
+			while( t[i] ) document.write('&#'+t[i++]+';'); 
+			i++; document.write('</a>');
+			// -->
+			</script>
+			<noscript>
+			<p>JavaScript is required to view this email address
+			</p></noscript><br />
+		   <br />
+               <script language="javaScript" type="text/javascript">
+				<!-- Begin
+				var months=new Array(13);
+				months[1]="1";
+				months[2]="2";
+				months[3]="3";
+				months[4]="4";
+				months[5]="5";
+				months[6]="6";
+				months[7]="7";
+				months[8]="8";
+				months[9]="9";
+				months[10]="10";
+				months[11]="11";
+				months[12]="12";
+				
+				var time=new Date();
+				var lmonth=months[time.getMonth() + 1];
+				var date=time.getDate();
+				var year=time.getYear();
+			
+				var hours=time.getHours();
+				var minutes=time.getMinutes();
+			
+				if ((navigator.appName == "Microsoft Internet Explorer") && (year < 2000))		
+				year="19" + year;
+				if (navigator.appName == "Netscape")
+				year=1900 + year;
+			
+				document.write(lmonth + ".");
+				document.write(date + ".");
+				document.write(year);
+				document.write("<br />")
+				document.write((hours > 12) ? hours-12 : hours);
+				document.write(((minutes < 10) ? ":0" : ":") + minutes);
+				document.write((hours >= 12) ? " pm" : " am" );
+				// End -->
+			</script><br />
+			<br />
+    		<div align="center">
+	        	<!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
+	        	<a href="http://s10.sitemeter.com/stats.asp?site=s10zanshin" target="_top">
+	        	<img src="http://s10.sitemeter.com/meter.asp?site=s10zanshin" alt="Site Meter" border="0" /></a>
+	        	<!--WEBBOT bot="HTMLMarkup" Endspan -->
+	    	</div><br />
+		</div>
+    </div>
+	
+	<!-- the center of the page -->	
+	<div id="center">
+		<div id="header">
+		    <img style="" border="0" src="images/shoreline.gif" alt="entry" height="115" width="600" />
+		    <br />
+		    <div class="zanshin">zanshin.net</div>
+		    <br />
+		</div>
+		<div class="postheader first">
+		    <div class="entryTitle">Diversions</div>
+		</div>
+		<div class="posttext">
+		    <b>What I read and watch</b><br />
+		    <table cellspacing="0" cellpadding="0" border="0" align="center">
+<thead><tr><td>date</td><td>title</td><td>author/artist/actor</td><td>media</td><td>rating</td</tr></thead>
+<tr><td>5.15.2003</td><td><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0345428080/ref=pd_sim_books_3/104-2042128-1630367?v=glance&s=books">Crisis Four</a></td><td>Andy McNab</td><td>paperback</td><td><b>****</b>......</td></tr>
+<tr><td>5.16.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0312709919">The Wreck of The River of Stars</a></td><td>Michael Flynn</td><td>e-Book</td><td><b>******</b>....</td></tr>
+<tr><td>5.17.2003</td><td><a href="http://us.imdb.com/Title?0234215">The Matrix Reloaded</a></td><td>Carrie-Anne Moss</td><td>theater</td><td><b>********</b>..</td></tr>
+<tr><td>5.18.2003</td><td><a href="http://us.imdb.com/Title?0253556">Reign of Fire</a></td><td>Matthew McConaughey</td><td>cable</td><td><b>***</b>.......</td></tr>
+<tr><td>5.18.2003</td><td><a href="http://us.imdb.com/Title?0298856">Evelyn</a></td><td>Pierce Brosnan</td><td>VHS</td><td><b>********</b>..</td></tr>
+<tr><td>5.18.2003</td><td><a href="http://us.imdb.com/Title?0303933">Drumline</a></td><td>Nick Cannon</td><td>DVD</td><td><b>**</b>........</td></tr>
+<tr><td>5.18.2003</td><td><a href="http://us.imdb.com/Title?0346293">Hitler: The Rise of Evil (part 1)</a></td><td>Robert Carlyle</td><td>television</td><td><b>*******</b>...</td></tr>
+<tr><td>5.19.2003</td><td><a href="http://us.imdb.com/Title?0286106">Signs</a></td><td>Mel Gibson</td><td>DVD</td><td><b>*****</b>.....</td></tr>
+<tr><td>5.20.2003</td><td><a href="http://us.imdb.com/Title?0346293">Hitler: The Rise of Evil (part 2)</a></td><td>Robert Carlyle</td><td>television</td><td><b>*******</b>...</td></tr>
+<tr><td>5.23.2003</td><td><a href="http://us.imdb.com/Title?0234215">The Matrix Reloaded</a></td><td>Carrie-Anne Moss</td><td>theater</td><td><b>********</b>..</td></tr>
+<tr><td>5.23.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0553897500?searchrank=99">The Survivors Club</a></td><td>Lisa Gardner</td><td>e-book</td><td><b>*****</b>.....</td></tr>
+<tr><td>5.23.2003</td><td><a href="http://us.imdb.com/Title?0289848">Analyze That</a></td><td>Billy Crystal</td><td>DVD</td><td><b>******</b>....</td></tr>
+<tr><td>5.25.2003</td><td><a href="http://us.imdb.com/Title?0076489">Oh God</a></td><td>George Burns</td><td>VHS</td><td><b>******</b>....</td></tr>
+<tr><td>5.23.2003</td><td><a href="http://us.imdb.com/Title?0168786">Antwone Fisher</a></td><td>Denziel Washington</td><td>VHS</td><td><b>*********</b>.</td></tr>
+<tr><td>5.23.2003</td><td><a href="http://us.imdb.com/Title?0274468">Door to Door</a></td><td>William H. Macy</td><td>DVD</td><td><b>**********</b></td></tr>
+<tr><td>5.23.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0440333865">Persuader: A Jack Reacher novel</a></td><td>Lee Child</td><td>e-book</td><td><b>******</b>....</td></tr>
+<tr><td>5.28.2003</td><td><a href="http://www.pbs.org/wnet/berga/">Berga: Soilders of Another War</a></td><td>Charles Guggenheim</td><td>PBS Documentary</td><td><b>**********</b></td></tr>
+<tr><td>5.29.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0440334128">The Edge of Justice</a></td><td>Clinton McKinzie</td><td>e-book</td><td><b>********</b>..</td></tr>
+<tr><td>5.29.2003</td><td><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0440240808/qid=1054433534/sr=8-3/ref=sr_8_3/104-2042128-1630367?v=glance&s=books&n=507846">Point of Law</a></td><td>Clinton McKinzie</td><td>paperback</td><td><b>*******</b>...</td></tr>
+<tr><td>6.1.2003</td><td><a href="http://us.imdb.com/Title?0128853">You've Got Mail</a></td><td>Meg Ryan</td><td>DVD</td><td><b>********</b>..</td></tr>
+<tr><td>6.2.2003</td><td><a href="http://us.imdb.com/Title?0054692">Blue Hawaii</a></td><td>Elvis Presley</td><td>DVD</td><td><b>****</b>......</td></tr>
+<tr><td>6.3.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0759547637">How Would You Move Mt. Fuji?</a></td><td>William Poundstone</td><td>e-book</td><td><b>********</b>..</td></tr>
+<tr><td>6.3.2003</td><td><a href="http://us.imdb.com/Title?0101345">And The Sea Will Tell</a></td><td>Richard Crenna</td><td>cable</td><td><b>*****</b>.....</td></tr>
+<tr><td>6.7.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0385504217">The Da Vinci Code</a></td><td>Dan Brown</td><td>e-book</td><td><b>*******</b>...</td></tr>
+<tr><td>6.8.2003</td><td><a href="http://us.imdb.com/Title?0278435">Enough</a></td><td>Jennifer Lopez</td><td>cable</td><td><b>******</b>....</td></tr>
+<tr><td>6.11.2003</td><td><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0425157474/qid=1055688566/sr=1-26/ref=sr_1_26/002-5766558-0997606?v=glance&s=books">Chance</a></td><td>Robert B. Parker</td><td>paperback</td><td><b>*******</b>...</td></tr>
+<tr><td>6.13.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0759545987?searchrank=55">The Jewel of the Nile</a></td><td>Kathleen Turner </td><td>DVD</td><td><b>*****</b>.....</td></tr>
+<tr><td>6.13.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0759545987?searchrank=55">The Black Echo</a></td><td>Michael Connelly</td><td>e-book</td><td><b>*******</b>...</td></tr>
+<tr><td>6.14.2003</td><td><a href="http://us.imdb.com/Title?0057193">It's A Mad Mad Mad World</a></td><td>Spenser Tracy</td><td>cable</td><td><b>********</b>..</td></tr>
+<tr><td>6.19.2003</td><td><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0440202116/qid=1056243873/sr=8-1/ref=sr_8_1/002-5766558-0997606?v=glance&s=books&n=507846">The Berkut</a></td><td>Joseph Heywood</td><td>hardback</td><td><b>********</b>..</td></tr>
+<tr><td>6.20.2003</td><td><a href="http://us.imdb.com/Title?0314353">Tears of the Sun</a></td><td>Bruce Willis</td><td>DVD</td><td><b>*****</b>.....</td></tr>
+<tr><td>6.21.2003</td><td><a href="http://us.imdb.com/Title?0246460">Die Another Day</a></td><td>Pierce Brosnan</td><td>DVD</td><td><b>******</b>....</td></tr>
+<tr><td>6.21.2003</td><td><a href="http://us.imdb.com/Title?0257360">About Schmidt</a></td><td>Jack Nicholson</td><td>DVD</td><td><b>********</b>..</td></tr>
+<tr><td>6.22.2003</td><td><a href="http://us.imdb.com/Title?0071562">The Godfather, part II</a></td><td>Al Pacino</td><td>cable</td><td><b>*********</b>.</td></tr>
+<tr><td>6.22.2003</td><td><a href="http://us.imdb.com/Title?0292506">The Recruit</a></td><td>Al Pacino</td><td>DVD</td><td><b>*******</b>...</td></tr>
+<tr><td>6.23.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0759545987?searchrank=55">Black Ice</a></td><td>Michael Connelly</td><td>e-book</td><td><b>*******</b>...</td></tr>
+<tr><td>6.26.2003</td><td><a href="http://us.imdb.com/Title?0039416">Gentleman's Agreement</a></td><td>Gregory Peck</td><td>DVD</td><td><b>********</b>..</td></tr>
+<tr><td>6.27.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0759545987?searchrank=55">Concrete Blonde</a></td><td>Michael Connelly</td><td>e-book</td><td><b>********</b>..</td></tr>
+<tr><td>6.28.2003</td><td><a href="http://us.imdb.com/Title?0061107">Torn Curtian</a></td><td>Paul Newman</td><td>DVD</td><td><b>*******</b>...</td></tr>
+<tr><td>6.28.2003</td><td><a href="http://us.imdb.com/Title?0032138">The Wizard of Oz</a></td><td>Judy Garland</td><td>Drive In</td><td><b>*******</b>...</td></tr>
+<tr><td>6.22.2003</td><td><a href="http://us.imdb.com/Title?0311289">Holes</a></td><td>Sigourney Weaver</td><td>Drive In</td><td><b>******</b>....</td></tr>
+<tr><td>7.1.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0060540818">Prey</a></td><td>Michael Crichton</td><td>e-book</td><td><b>*******</b>...</td></tr>
+<tr><td>7.5.2003</td><td><a href="http://us.imdb.com/Title?0046876">Creature From the Black Lagoon (3D)</a></td><td>Richard Carlson</td><td>Drive In</td><td><b>*****</b>.....</td></tr>
+<tr><td>7.9.2003</td><td><a href="http://www.palmdigitalmedia.com/book.cgi/0375413219">Timeline</a></td><td>Michael Crichton</td><td>e-book</td><td><b>********</b>..</td></tr>
+<tr><td>7.11.2003</td><td><a href="http://us.imdb.com/Title?0056592">To Kill A Mockingbird</a></td><td>Gregory Peck</td><td>DVD</td><td><b>**********</b></td></tr>
+<tr><td>7.12.2003</td><td><a href="http://us.imdb.com/Title?0031679">Mr. Smith Goes To Washington</a></td><td>Jimmy Stewart</td><td>cable</td><td><b>*********</b>.</td></tr>
+<tr><td>7.13.2003</td><td><a href="http://us.imdb.com/Title?0101745">Doc Hollywood</a></td><td>Michael J. Fox</td><td>cable</td><td><b>******</b>....</td></tr>
+</table>
+		    <br />
+		    <br />
+		</div>	
+		<br />
+		<br />
+		<br />
+		<br />
+	</div>
+	
+	<!-- the right side of the page -->
+	<div id="right">
+        <br />
+        <a href="http://creativecommons.org/licenses/by-nd-nc/1.0">
+        <img alt="Creative Commons License" border="0" src="http://creativecommons.org/images/public/somerights.gif" style="padding-left: 7px;" /></a>
+        <br />
+        <a href="http://validator.w3.org/check/referer"><img src="images/valid-xhtml10.png" alt="Valid XHTML 1.0!" height="31" width="88" style="padding-left: 7px;" /></a> 
+        <br />
+        <a href="http://www.moveabletype.org/" target="_blank"><img src="images/mt.gif" alt="moveabletype.org" width="135" height="22" border="0" /></a>
+	</div>
+	<!-- the bottom tab -->
+	<div id="bottomtab">
+	    <div class="bottomtabtext">&#169; mark h nichols 1995-2003</div>
+	</div>
+</div>
+
+</body>
+</html>

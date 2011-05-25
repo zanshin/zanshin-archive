@@ -1,0 +1,202 @@
+	body {
+		font       : 11px 'Lucinda Grande', Tohoma, Verdana, Arial, Helvetica, Serif;
+		text-align :  center;
+		background-color : #F0F0F0;
+		margin     : 0px 0px 10px 0px;
+		padding    : 0px;
+		}
+		
+	a {
+		text-decoration : none;
+		}
+	
+	a:hover {
+		text-decoration: underline ;
+		color          : #DC143C ;
+		background    : #fff;
+		}
+	
+	#frame {
+		width        : 753px;
+		margin       : 0px auto 0px auto;
+		padding      : 0px;
+		text-align   : left;
+		voice-family : "\"}\"";
+		width        : 753px;
+		}
+		
+	html>body #frame { width:753px; }
+	
+	.tabtext {
+		padding-top  :3px;
+		text-align   :center;
+		}
+		
+	.bottomtabtext {
+	    text-align   : right;
+	    margin-right : 45px ;
+	    padding-top   : 3px;
+	    }
+	
+	#toptab {
+		background   :#E8E8E8;
+		width        :100px;
+		height       :20px;
+		margin       :11px 0px 0px 75px;
+		font-size    :10px;
+		border-top   :1px solid #000; border-left:1px solid #000; border-right:1px solid #000;
+		voice-family : "\"}\"";
+		margin-top   :10px;
+		}
+	html>body #toptab { margin-top:10px; }
+	
+	#bottomtab {
+		clear         : both;
+		background    : #E0E8F8;
+		width         : 240px;
+		height        : 20px;
+		margin        : 0px 0px 10px 437px;
+		font-size     : 10px;
+		border-bottom : 1px solid #000; border-left:1px solid #000; border-right:1px solid #000;
+		voice-family  : "\"}\"";
+		margin-left   : 435px;
+		}
+	html>body #bottomtab { margin-left:435px; }
+	
+	#left {
+		float:left;
+		background:#F0F8FF;
+		text-align:right;
+		font-size:10px; line-height: 17px;
+		width:75px;
+		}
+		
+	#leftlinks {
+		background:#F0F8FF;
+		padding:5px 5px 10px 5px;
+		border-top:1px solid #000; border-left:1px solid #000; border-bottom:1px solid #000;
+		}
+	
+	#center {
+		float:left;
+		background:#fff;
+		width:602px;
+		border:1px solid #000;
+		voice-family: "\"}\"";
+		width:600px;
+		}
+	html>body #center {
+		width:600px;
+		}
+	
+	#right {
+		float      : left;
+		width      : 75px;
+		margin-top : 170px;
+		padding    : 0px;
+		border-top : 0px solid #000;}
+		
+	#photoblog {
+		float:left;
+		width:125px;
+		background:#E0E8F0;
+		margin: 0px 10px 10px -1px;
+		padding-top:5px;
+		text-align:center;
+		border-left:1px solid #000; border-right:1px solid #000; border-bottom:1px solid #000;
+		}
+		
+	p,pre {
+		margin:0px 10px 20px 10px;
+		text-align:justify; 
+		}
+		
+	.postheader {
+		background    : #fff;
+		margin        : 0px 0px 20px 0px;
+		padding       : 0px 10px 0px 10px; /*I have no earthly Idea why, but giving this a right padding of10 makes it work in IE5 Mac!*/
+		border-top    : 1px solid #000; 
+		border-bottom : 0px solid #000;
+		}
+		
+	.first {border-top:0px;}
+	
+	.posttitle  {
+		font-weight:bold;
+		padding:5px 0px 5px 0px;
+		}
+		
+	.entryTitle {
+		font-family   : 'Copperplate Gothic Light', georgia, serif;
+		font-size     : 19px;
+		padding-bottom: 2px;
+		margin-bottom : 0px;
+		margin-top    : 0px;
+		margin-left   : 30px;
+		margin-right  : 10px;
+		font-weight   : bold;
+		color         : #333;
+		border-bottom : dotted #666 1px;
+		text-align    : left;
+		width         : 535px;
+		}	
+		
+	.entryDate {
+		color: #666;
+		font-family: Verdana, Tohoma, Helvetica, Serif;
+		font-size: 9px;
+		text-align: left;
+		text-transform: lowercase;
+		margin-top: 0px;
+		margin-bottom: 5px;
+		margin-left: 30px;
+		padding: 0;
+		width: 535px;
+		}
+		
+	.postcomments {
+		float      : right;
+		padding    : 5px 0px 5px 0px;
+		width      : 100px;
+		text-align : right;
+		margin-right : 20px;
+		}
+	.postcomments img {display:inline; }
+	
+	.posttext {
+	    font-size: 12px;
+	    line-height: 17px;
+	    padding-left : 1em;
+	    padding-right : 1em;
+	    color : Black;
+	    text-align: left;
+	    margin-left: 30px;
+	  /*  width: 500px; */
+        }
+		
+	#contentheader h1 {
+		font-size:14px;
+		padding:10px;
+		}
+	
+	#contentright p { font-size:10px}
+	
+	#header {border-bottom: 1px solid black;
+			 background:#98a0ba;
+	         margin-bottom: 5px;}
+	
+	.rightimg {
+		border-bottom :1px solid #000;
+		border-right  :1px solid #000;}
+		
+	img {display:block; margin:auto}
+	
+	.zanshin {
+		border-top : 0px solid black;
+	    font-family : verdana,arial,sans-serif;
+	    font-weight : normal;
+	    font-size : large;
+	    color : #DC143C ;
+	    text-align : right;
+	    letter-spacing : 1em;
+        }

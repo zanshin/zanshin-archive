@@ -1,0 +1,25 @@
+div.nicetitle {
+    position: absolute;
+    padding: 4px;
+    border: 1px solid black;
+    top: 0px;
+    left: 0px;
+    color: black;
+    font-size: 13px;
+	font-family: Optima, Helvetica, Arial, sans-serif;
+    width: 25em;
+    font-weight: bold;
+    background: url(http://www.eloquentapathy.com/myimages/ntbg.png);
+	margin-top: 1pc;
+    
+    /* Mozilla proprietary */
+    -moz-border-radius: 12px;
+}
+div.nicetitle p {
+    margin: 0; padding: 0 3px;
+}
+div.nicetitle p.destination {
+    font-size: 9px;
+    text-align: left;
+    padding-top: 3px;
+}

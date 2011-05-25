@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>one man's thoughts on life, emotional growth, nerdliness, and social issues</title>
+
+<!--
+  Zanshin.net 
+  Version 11.0 (beta)
+  
+  This is roughly the eleventh iteration of my personal website. Zansin.net
+  has been online continuously since the fall of 1995. Originally it was
+  my own portal site, before protals were popular. Gradually the site focus 
+  shifted away from the external towards the internal, just as my personal
+  focus was shifting away from outside me to inside me.
+  
+  I have been fortunate to find and be able to utilize the fine work of
+  several people in the development of this site. Where their efforts are
+  used, credit is given. I fully support intellectual property sharing.
+  Economic advantage based on an idea is a practice whose time is drawing
+  to a close. The fine hair to split here is giving proper credit. I have
+  not knowingly used any scripts, images, or other artifacts without giving
+  proper credit. All software used to create this site was either open
+  source, or purchased. No pirated software was used in the making of this
+  site.
+  
+  Enjoy. 
+  
+  mark 4 april 2003
+-->
+
+<style type="text/css">
+	
+	body {
+		font       : 11px/1.4 'Lucinda Grande', Tohoma, Verdana, Arial, Helvetica, Serif;
+		text-align :  center;
+		background :#F0F0F0;
+		margin     : 0px 0px 10px 0px;
+		padding    : 0px;
+		}
+		
+	a {
+		text-decoration : none;
+		}
+	
+	a:hover {
+		text-decoration: underline ;
+		color          : crimson ;
+		}
+	
+	#frame {
+		width        : 753px;
+		margin       : 0px auto 0px auto;
+		padding      : 0px;
+		text-align   : left;
+		voice-family : "\"}\"";
+		width        : 753px;
+		}
+		
+	html>body #frame { width:753px; }
+	
+	.tabtext {
+		padding-top  :3px;
+		text-align   :center;
+		}
+	
+	#toptab {
+		background   :#E8E8E8;
+		width        :100px;
+		height       :20px;
+		margin       :11px 0px 0px 75px;
+		font-size    :10px;
+		border-top   :1px solid #000; border-left:1px solid #000; border-right:1px solid #000;
+		voice-family : "\"}\"";
+		margin-top   :10px;
+		}
+	html>body #toptab { margin-top:10px; }
+	
+	#bottomtab {
+		clear         :both;
+		background    :#E0E8F8;
+		width         :240px;
+		height        :20px;
+		margin        :0px 0px 10px 437px;
+		font-size     :10px;
+		border-bottom :1px solid #000; border-left:1px solid #000; border-right:1px solid #000;
+		voice-family  : "\"}\"";
+		margin-left   :435px;
+		}
+	html>body #bottomtab { margin-left:435px; }
+	
+	#left {
+		float:left;
+		background:#F0F8FF;
+		text-align:right;
+		font-size:10px; line-height: 17px;
+		width:75px;
+		}
+		
+	#leftlinks {
+		background:#F0F8FF;
+		padding:5px 5px 10px 5px;
+		border-top:1px solid #000; border-left:1px solid #000; border-bottom:1px solid #000;
+		}
+	
+	#center {
+		float:left;
+		background:#fff;
+		width:602px;
+		border:1px solid #000;
+		voice-family: "\"}\"";
+		width:600px;
+		}
+	html>body #center {
+		width:600px;
+		}
+	
+	#right {
+		float:left;
+		width:75px;
+		margin-top:125px;
+		padding:0px;
+		border-top:1px solid #000;}
+		
+	#photoblog {
+		float:left;
+		width:125px;
+		background:#E0E8F0;
+		margin: 0px 10px 10px -1px;
+		padding-top:5px;
+		text-align:center;
+		border-left:1px solid #000; border-right:1px solid #000; border-bottom:1px solid #000;
+		}
+		
+	p,pre {
+		margin:0px 10px 20px 10px;
+		text-align:justify;
+		}
+		
+	.postheader {
+	//	background    : #ddd;
+		background    : #fff;
+		margin        : 0px 0px 20px 0px;
+		padding       : 0px 10px 0px 10px; /*I have no earthly Idea why, but giving this a right padding of10 makes it work in IE5 Mac!*/
+		border-top    : 1px solid #000; 
+		border-bottom : 0px solid #000;
+		}
+		
+	.first {border-top:0px;}
+	
+	.posttitle  {
+		font-weight:bold;
+		padding:5px 0px 5px 0px;
+		}
+		
+	.entryTitle {
+		font-family   : 'Copperplate Gothic Light', georgia, serif;
+		font-size     : 19px;
+		padding-bottom: 2px;
+		margin-bottom : 0px;
+		margin-top    : 0px;
+		margin-left   : 30px;
+		margin-right  : 10px;
+		font-weight   : bold;
+		color         : #333;
+		border-bottom : dotted #666 1px;
+		text-align    : left;
+		width         : 535px;
+		}	
+		
+	.entryDate {
+		color: #666;
+		font-family: Verdana, Tohoma, Helvetica, Serif;
+		font-size: 9px;
+		text-align: right;
+		text-transform: lowercase;
+		margin-top: 0px;
+		margin-bottom: 5px;
+		margin-left: 25px;
+		padding: 0;
+		width: 535px;
+		}
+		
+	.postcomments {
+		float      : right;
+		padding    : 5px 0px 5px 0px;
+		width      : 100px;
+		text-align : right;
+		}
+	.postcomments img {display:inline; }
+	
+	.posttext {
+	    font-size: 12px;
+	    line-height: 17px;
+	    padding-left : 1em;
+	    padding-right : 1em;
+	    color : Black;
+	    text-align: left;
+	 //   margin-left: 30px;
+	 //   width: 500px;
+}
+		
+	#contentheader h1 {
+		font-size:14px;
+		padding:10px;
+		}
+	
+	#contentright p { font-size:10px}
+	
+	#header {border-bottom: 1px solid black;
+	         margin-bottom: 5px;}
+	
+	.rightimg {
+		border-bottom:1px solid #000;
+		border-right:1px solid #000;}
+		
+	img {display:block; margin:auto}
+	
+	.zanshin {
+		border-top : 0px solid black;
+	    font-family : verdana,arial,sans-serif;
+	    font-weight : normal;
+	    font-size : large;
+	    color : crimson;
+	    text-align : right;
+	    letter-spacing : 1em;
+}
+</style>
+<script type="text/javascript">
+
+var frame
+var left
+var nav
+var inited
+function init() {
+	window.onresize=moveNav;
+	if (!document.createElement) return //begone, old browser
+	frame=document.getElementById('frame')
+	left=document.getElementById('left')
+	nav=document.createElement("DIV")
+	nav.style.position="absolute";
+	nav.style.lineHeight=left.style.lineHeight
+	nav.style.fontSize=left.style.fontSize
+	nav.style.padding=left.style.padding
+	nav.style.width=left.style.width
+	nav.style.height=getMyProperty(left,'height')
+	nav.style.textAlign=left.style.textAlign
+	
+	inited = true
+	moveNav()
+	nav.innerHTML=left.innerHTML;
+	document.body.appendChild(nav)
+	left.style.visibility='hidden';
+	watchForScroll()
+	}
+	
+function getMyProperty(obj,prop) {
+	if (document.all) {
+		if (prop=='top') return obj.offsetTop+document.body.scrollTop+'px';
+		if (prop=='left') return obj.offsetLeft+'px';
+		if (prop=='height') return obj.offsetHeight+'px';
+	} else {
+		if (prop=='top') return (window.pageYOffset+parseInt(document.defaultView.getComputedStyle(obj,'').getPropertyValue('top')))+'px';
+		if (prop=='left') return document.defaultView.getComputedStyle(obj,'').getPropertyValue('left');
+		if (prop=='height') return document.defaultView.getComputedStyle(obj,'').getPropertyValue('height');
+		}
+	}
+
+function moveNav() {
+	if (!inited) return false;
+	newLeft=getMyProperty(frame,'left');
+	newTop=getMyProperty(left,'top');
+	if (parseInt(newTop)+parseInt(getMyProperty(left,'height')) > parseInt(getMyProperty(frame,'height'))-30){
+		newTop=(parseInt(getMyProperty(frame,'height'))-30-parseInt(nav.style.height))+'px'
+		}
+	nav.style.left=newLeft
+	nav.style.top=newTop
+	}
+
+lastS = 0
+thisS = 0
+function watchForScroll() {
+	thisS=(document.body.scrollTop)?document.body.scrollTop:window.pageYOffset
+	if (thisS!=lastS) {
+		lastS=thisS
+		moveNav()
+	}
+	setTimeout('watchForScroll()',50)
+	}
+	
+</script>
+</head>
+<body onload="init()">
+
+<div id="frame" style="">
+	<div id="toptab">
+	    <div class="tabtext">about me</div>
+	</div>
+	<div id="left" style="float:left; text-align:right; font-size:10px; line-height: 17px; width:75px;">
+		<div id="leftlinks">
+		   <b>i/me/mine</b><br />
+		   <a href="http://www.zanshin.net/" 
+		      onclick="return false;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='zanshin.net';return true" 
+		      onmouseout="window.status='';return true">home</a><br />
+		   <a href="http://www.zanshin.net/about.html" 
+		      onclick="return false;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='about the author';return true" 
+		      onmouseout="window.status='';return true">about</a><br />
+		      <a href="don't click on that" 
+		      onclick="return false;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='1998-2001';return true" 
+		      onmouseout="window.status='';return true">archives</a><br />
+		   <br />
+		   <b>flotsam</b><br />
+		   <a href="don't click on that"
+		      onclick="return false;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='spams as of 4.4.2003';return true" 
+		      onmouseout="window.status='';return true">17000</a><br />
+           <a href="don't click on that"
+		      onclick="return false;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='keystrokes since 5.31.2002;return true" 
+		      onmouseout="window.status='';return true">2,261,144</a><br />
+		   <br />
+		   <b>etcetera</b><br />
+		   <a href="don't click on that" 
+		      onclick="return false;" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='other voices, other rooms';return true" 
+		      onmouseout="window.status='';return true">links</a><br />
+		   <a href="http://www.amazon.com/exec/obidos/wishlist/2950CXQXGWLF1" 
+		      onmouseover="window.status='emotional capitalism';return true" 
+		      onmouseout="window.status='';return true">wishlist</a><br />
+		   <a href="mailto:noah@noahgrey.com" 
+		      class="sidemenulink" 
+		      onmouseover="window.status='noah at noahgrey dot com';return true" 
+		      onmouseout="window.status='';return true">e-mail</a>
+		</div>
+    </div>
+	
+	<div id="center">
+		<div id="header">
+		    <img style="" border="0" src="images/shoreline.gif" alt="entry" height="122" width="600" />
+		    <br />
+		    <div class="zanshin">zanshin.net</div>
+		    <br />
+		</div>
+		<div class="postheader first">
+		    <div class="postcomments"><img src="images/comment.gif" height="15" width="13" alt="" />(76) </div>
+		    <div class="entryTitle">Mark Hanford Nichols</div>
+		</div>
+		<div class="posttext">
+		   <p>
+	           i was born in brooklyn, new york, and raised in decatur,
+	        illinois. my major interests as a child were swimming and
+    	    taking things apart.
+		<br />
+    	<br />
+        	in high school i discovered computers. the first programs
+	        i wrote were in basic, done with optical scan cards, paper
+			tape spools, and a tty terminal. i still have some of those 
+			early games on paper tape spools. 
+		<br />
+        <br />
+        	i studied computer science at illinois state university,
+	        focussing on the then hot topics of jcl, cics, and vsam.
+	        i have a bachelor of science degree with a minor in
+	        business administration.
+		<br />
+        <br />
+        	after college i moved to springfield, illinois. my
+	        interests there included the local bicycle club and
+	        karate-do. i hold a nidan in shudo-kan karate-do and have
+	        competed at the national level several times. 
+		<br />
+        <br />
+        	i met my wife, michele, online via the internet. we spent
+	        a year talking on the phone and meeting half way between
+	        colorado springs and springfield. we were married on july
+    	    26, 1997. she is a psychotherapist with a private
+	        practice.
+		<br />
+        <br />
+        	in the spring of 1998 we moved to vancouver, washington.
+	        it is one of the greenest places in this country. it is
+	        also one of the wettest. it never rains hard but it does
+	        rain almost every day. the winter time cloud cover lasts 
+			from late september until march or april.
+		<br />
+        <br />
+        	in the early summer of 1999 we moved cross country to
+	        charleston, south carolina. we purchased a home in
+	        summerville, about 30 west of charleston. the move to 
+	        charleston put us in the middle of
+	        our familes. with friends a relatives in florida, north
+	        carolina, tennessee, and illinois; south carolina was a
+	        good choice.	
+	    <br />
+	    <br />
+	        after losing my job in may of 2000 and regaining it in
+	        july of 2000 we decided to move again. back to central
+	        illinois. currently i am working for myself as a
+	        contractor for the state of illinois.
+		   </p>
+		</div>
+     
+	<div id="bottomtab"><div class="tabtext">(c) 1996-2003 mhn. All rights reserved. </div></div>
+</div>
+
+</body>
+</html>

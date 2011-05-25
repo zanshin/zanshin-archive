@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title>Untitled</title>
+</head>
+<body>
+<div class="calendar"> 
+<div align="center"><B><$MTArchiveDate format="%B, %Y"$></B></div> 
+<TABLE BORDER="0" CELLPADDING="2" CELLSPACING="0" WIDTH="140"><TR> 
+<TD class="calhead">S</TD><TD class="calhead">M</TD><TD class="calhead">T</TD><TD class="calhead">W</TD><TD class="calhead">T</TD><TD class="calhead">F</TD><TD class="calhead">S</TD></TR> 
+<MTCalendar month="this"> 
+<MTCalendarWeekHeader><TR HEIGHT="20"><? $counter = 0; ?></MTCalendarWeekHeader> 
+<TD class="calbody" style="<MTCalendarIfToday>background-color: #4e4e4e;</MTCalendarIfToday>" BGCOLOR="<? echo $counter++ % 2 ? '#222222' : '#111111' ?>"><MTCalendarIfEntries> 
+<a href=" http://kadyellebee.com/mt/past/<$MTEntryDate format="%Y/%m/%d.php"$> " title="<MTEntries> | <$MTEntryTitle encode_html="1"$>  | </MTEntries>"> 
+<$MTCalendarDay$></A></MTCalendarIfEntries> 
+<MTCalendarIfNoEntries><$MTCalendarDay$></MTCalendarIfNoEntries> 
+<MTCalendarIfBlank><BR></MTCalendarIfBlank> 
+</td><MTCalendarWeekFooter></tr> 
+</MTCalendarWeekFooter></MTCalendar> 
+</table></div> 
+</body>
+</html>
