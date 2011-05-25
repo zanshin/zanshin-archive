@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Greymatter 1.21b - Installation Instructions</TITLE>
+<META NAME="Generator" CONTENT="Greymatter 1.21b">
+<META NAME="AUTHOR" CONTENT="Noah Grey">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#000000" VLINK="#000000" ALINK="#000000">
+
+<FONT FACE="VERDANA, ARIAL, HELVETICA" SIZE=2>
+
+<P ALIGN=CENTER CLASS="maintitle"><CENTER>
+<FONT SIZE=6><B>Greymatter</B></FONT><BR><FONT COLOR="#0000FF" SIZE=4><B>Weblog/Journal Software &#183; Version 1.21b &#183; Installation Instructions</B></FONT><BR><B>Copyright &copy;2000 Noah Grey &#183; All Rights Reserved</B>
+</CENTER></P>
+
+<P ALIGN=CENTER><CENTER>
+<BR>
+</CENTER></P>
+
+<P ALIGN=JUSTIFY CLASS="title">
+<HR NOSHADE COLOR="#000000">
+<FONT COLOR="#0000FF" SIZE=4><B>Requirements</B></FONT>
+<HR NOSHADE COLOR="#000000">
+</P>
+
+<BLOCKQUOTE>
+<P ALIGN=JUSTIFY>
+Greymatter requires the ability to run Perl software on your web account, and an FTP client (such as <A HREF="http://www.cuteftp.com/">CuteFTP</A>) to upload the files to your account and CHMOD them there.  Also, you should be modestly comfortable with editing HTML to customise the templates, and thus make your weblog/journal truly your own.
+</P>
+</BLOCKQUOTE>
+
+<P ALIGN=JUSTIFY CLASS="title">
+<HR NOSHADE COLOR="#000000">
+<FONT COLOR="#0000FF" SIZE=4><B>Upgrading From Version 1.0 or 1.1</B></FONT>
+<HR NOSHADE COLOR="#000000">
+</P>
+
+<BLOCKQUOTE>
+<P ALIGN=JUSTIFY>
+If you've already got Greymatter successfully installed and you want to upgrade to the new version, you'll need to re-upload the files "gm.cgi", "gm-library.cgi", "gm-karma.cgi", and "gm-comments.cgi"  replacing the older versions of those four files on your account with the newer ones.  (Be sure to change your Perl pointer again&#151;in gm.cgi, gm-karma.cgi, and gm-comments.cgi&#151;if it's something other than "/usr/bin/perl".)  There's also a new file included with version 1.2&#151;gm-upload.cgi&#151;which you'll need to upload with your other Greymatter CGI files and CHMOD to 755 (again, making sure the Perl pointer is correct on it, if it's not /usr/bin/perl).  <I>Do NOT reupload any other files, or you'll mess up your setup.</I>
+</P><P ALIGN=JUSTIFY>
+Then, login to gm.cgi right away, as Greymatter will need to update some files to work properly with the new version.  And that's it&#151;enjoy the new version!
+</P><P ALIGN=JUSTIFY>
+<B>If you already have a 1.2x version successfully installed</B>, you only need to reupload gm.cgi and gm-library.cgi from this updated version.
+</P>
+</BLOCKQUOTE>
+
+<P ALIGN=JUSTIFY CLASS="title">
+<HR NOSHADE COLOR="#000000">
+<FONT COLOR="#0000FF" SIZE=4><B>Installing For The First Time</B></FONT>
+<HR NOSHADE COLOR="#000000">
+</P>
+
+<BLOCKQUOTE>
+<P ALIGN=JUSTIFY>
+<OL TYPE=number>
+<LI> Make sure you meet all the requirements, as specified above.
+<P>
+<LI> Check the files "gm.cgi", "gm-karma.cgi", "gm-comments.cgi", and "gm-upload.cgi", and look at the very 
+first line, which should say "#!/usr/bin/perl".  This is the pointer to Perl; you may need to change this if you know Perl is at a different location on your server (such as /usr/local/bin/perl or /usr/bin/perl5; on NT accounts, it may be C:/perl/bin/perl.exe), otherwise it should be fine to leave it alone.  This is the only time you'll ever need to touch the Greymatter program code.
+<P>
+<LI> If you want your main index file to be named something other than "index.htm", then rename the included index.htm file accordingly.  For clarity's sake, we'll assume "index.htm" with the rest of the instructions.
+<P>
+<LI> Open your FTP program.  Important note: All files except "gm-icon.gif" <B>must be uploaded in ASCII mode</B>; check your FTP program to find out how to make sure that all CGI files are uploaded as ASCII and not binary files.
+<P>
+<LI> Upload <B>all</B> the Greymatter CGI files (they all begin with "gm" and end with ".cgi") to the directory that you want to run Greymatter from.  (Your server may require you to run CGI files from a specific cgi-bin directory.)  All these files must be in the same directory on your account.
+<P>
+<LI> CHMOD the files "gm.cgi", "gm-karma.cgi", "gm-comments.cgi", and "gm-upload.cgi" to 755, and CHMOD all the other .cgi files to 666.
+<P>
+<LI> Upload index.htm (or whatever you've renamed it to) and gm-icon.gif to the place where you want your log to be&#151;usually the same directory you run Greymatter from (and this is what Greymatter will assume by default), but if your server requires you to run CGI programs from a cgi-bin directory, you may need to have this elsewhere.  Wherever you put this file will be considered your main log directory.
+<P>
+<LI> CHMOD the index.htm file (or whatever you've renamed it to) to 666.
+<P>
+<LI> Create the directory where all your log entries and archives will be stored (usually a subdirectory of the main log directory, but you can create this directory wherever you like, though on many servers it may not work as a subdirectory of the "cgi-bin" directory).  By default, Greymatter will assume you name this directory "archives", but you can name it whatever you wish.
+<P>
+<LI> CHMOD your entries/archives directory to 777.
+<P>
+<LI> Open your web browser and run gm.cgi on your site (for example, if you run www.mysite.com and you uploaded the 
+Greymatter files to the /log subdirectory, then you'd type http://www.mysite.com/log/gm.cgi in your browser).  If all of the above went okay, then you should now see the Greymatter logon prompt.  (If you're getting a 500 Server Error or having other problems attempting to run gm.cgi, go back and make sure that everything is uploaded and chmoded correctly; read the "Troubleshooting" section in the manual for more information.)
+<P>
+<LI> Log on with the author name "Alice", and the password "wonderland".
+<P>
+<LI> Welcome to Greymatter!  You'll be seeing a lot of this screen, but the very first thing you'll need to do is click on "Configuration".  You <B>must</B> make sure that the first six fields&#151;those grouped under "Path Configuration"&#151;are filled out correctly; Greymatter will attempt to automatically detect what these paths are, but you may need to modify them accordingly (again, note that Greymatter automatically assumes that the log path and the CGI path are the same by default, and that the entries/archives directory is called "archives").  Also, if your index filename is something other than "index.htm", you'll need to modify that accordingly as well.  Go through all the other configuration options, set them however you want, and click "Save Configuration".
+<P>
+<LI> Return to Configuration and click "Diagnostics & Repair"; this is to insure that all your files and paths are working correctly.  If you aren't able to run it successfully, your paths are probably incorrect; check the Troubleshooting section of the manual.  Once you've run it successfully, you'll be able to post your first entry.
+<P>
+<LI> Click "Edit Authors", create a new account for yourself with the name and password you'd like to use, and delete Alice.  (You <I>could</I> keep Alice around, but for obvious security reasons, it's not recommended.)  Since you're still logged on as Alice, you'll need to re-enter under the new name and password.
+</OL>
+</P><P ALIGN=JUSTIFY>
+All done!  You should now be able to post entries and get your weblog/journal going.  (It's a good idea to set up a private test weblog first, and try creating and editing a few test entries, simply so you can get the hang of Greymatter before doing it "for real".)
+</P><P ALIGN=JUSTIFY>
+Greymatter uses an extensive template system to allow you total control over every aspect of your weblog and all the pages & elements it'll comprise.  The default templates included with Greymatter are quite plain-jane, but they should be enough to provide a starting point and, hopefully, to give you a basic idea of Greymatter's template & variable usage.  Change the templates as much as you like (and just reupload the gm-templates.cgi file if you mess things up too much and want to start over) to suit your own design and style; refer to the Greymatter manual for full information about all the template variables.
+</P><P ALIGN=JUSTIFY>
+And that's that!  Hopefully by now you're up and running in some form&#151;after you add your first entry, open another window in your browser and load up your weblog's intended location.  You can alter your templates anytime to change any aspect of your weblog's design and layout (be sure to "Rebuild Files" after changing the templates for Greymatter to automatically update your site accordingly).  Enjoy doing your weblog/journal, and thanks for using Greymatter.  =)
+</P>
+</BLOCKQUOTE>
+
+</FONT>
+
+</BODY>
+</HTML>
