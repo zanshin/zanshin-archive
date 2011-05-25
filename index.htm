@@ -1,22 +1,73 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-
 <html>
+
 <head>
-	<title>i don't believe i understand all I know about this...</title>
+<style>
+<!-- Begin Hiding
+a	{
+	text-decoration: none;
+	color: #f0f8ff;
+	}
+
+a:link	{
+	text-decoration: none;
+	color: #f0f8ff;
+	}
+
+a:visited {
+	text-decoration: none;
+	color: #f0f8ff;
+	}
+
+a:hover	{
+	text-decoration: underline;
+	color: #f0f8ff;
+	}
+-->
+</style>
+<script language="JavaScript">
+<!--
+
+if (document.images) {
+  image1on = new Image();
+  image1on.src = "shoreline.gif";
+
+  image1off = new Image();
+  image1off.src = "empty.gif";
+
+}
+
+function changeImages() {
+  if (document.images) {
+    for (var i=0; i<changeImages.arguments.length; i+=2) {
+      document[changeImages.arguments[i]].src = eval(changeImages.arguments[i+1] + ".src");
+    }
+  }
+}
+
+// -->
+</script>
 </head>
-<!-- frames -->
-<frameset  rows="40,*" border=0 frameborder="no">
-    <frame name="heading" src="heading.htm" marginwidth="0" marginheight="0" scrolling="no" frameborder="no">
-    <frameset  cols="243,*,18%" border=0 frameborder="no">
-        <frame name="left" src="left.htm" marginwidth="0" marginheight="0" scrolling="auto" frameborder="no">
-        <frame name="center" src="center.htm" marginwidth="0" marginheight="0" scrolling="auto" frameborder="no">
-        <frame name="right" src="right.htm" marginwidth="0" marginheight="0" scrolling="auto" frameborder="no">
-    </frameset>
-</frameset>
 
-<body>
+<body bgcolor="#f0f8ff">
 
-
-
+<table width=639 align="center" border="0" width="100%" cellspacing="0" cellpadding="0">
+    <tr  bgcolor="#f0f8ff">
+	<td>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br></td>
+    </tr>
+    <tr align="right" bgcolor="#f0f8ff">
+	<td><img name="image1" src="empty.gif" alt="" width=639 height=114 border=0></a></td>	
+    </tr>
+    <tr align="right" bgcolor="#b0c4de">
+	<td><strong><font size="+2" face="verdana" color="#f0f8ff">
+	z&nbsp;&nbsp;a&nbsp;n&nbsp;s&nbsp;h&nbsp;i&nbsp;n&nbsp;
+	<a href="core.htm" onMouseOver="changeImages('image1', 'image1on')" onMouseOut="changeImages('image1', 'image1off')">[dot]</a>&nbsp;n&nbsp;e&nbsp;t&nbsp;</font></strong></td>
+    </tr>
+    <tr align="left" bgcolor="#b0c4de">
+	<td><font size="+1" face="verdana" color="#f0f8ff">... in love there is truth, in truth there is love ...</td>
+    </tr>
+    <tr  bgcolor="#f0f8ff">
+	<td>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br></td>
+    </tr>
+</table>
 </body>
 </html>
