@@ -1,0 +1,30 @@
+This project is an archive of previous version of the website zanshin.net The earliest version
+dates back to late 1995/early 1996. Versions were kept in directories on a file system until 
+2004 when they were imported into a Subversion repository. Each identifiable version was "parked"
+in its own branch in the repository. This was an error of ignorance about how to best use svn.
+
+The branches have been imported to Git by following this recipe:
+svn co <version 1 branch> zanshin
+cd zanshin
+git init
+git add .
+git commit -m ...
+git tag -a -m ...
+git branch r2
+git checkout r2
+git rm * (not really splat, but all files except for the .git directory)
+svn co <version 2 branch> .
+git add .
+git commit -m ...
+git tag -a -m ...
+git checkout master
+git merge <git branch>
+...
+
+This labor intensive process has correctly segrated the point in time snapshots that eh Subversion
+branches (rel-1.0, rel-2.0, ..., rel-15.0) represented.
+
+Now that the archive properly exists in Git the next step is to start cataloging the various WordPress
+configurations and themes that are used by the site today.
+
+2011.5.25 mhn
