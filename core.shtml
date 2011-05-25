@@ -14,15 +14,15 @@ content="text/html; charset=iso-8859-1">
 	{
 		var c_url	= "signreg.html";
 		var c_name	= "registrywin";
-		var c_stuff	= "width=400,"
-				+ "height=400,"
+		var c_stuff	= "width=500,"
+				+ "height=600,"
 				+ "type=fullwindow,"
 				+ "menubar=no,"
 				+ "scrollbars=no,"
 				+ "toolbar=no,"
 				+ "status=no,"
 				+ "titlebar=no,"
-				+ "resizeable=no";
+				+ "resizeable=yes";
 
 		var popup 	= window.open(c_url, c_name, c_stuff);
 	}
@@ -167,7 +167,6 @@ function _Cookie_remove()
 
 	this.$document.cookie = cookie;
 }
-
 //---------------------------------------------------------------------------------
 //-- create a dummy Cookie object, so we can use the protopyte object to make the
 //-- functions above into methods.
@@ -217,6 +216,7 @@ visitordata.visits++;			// increase counter by 1
 //-- also, store them again so save the updated visits state variable.
 //--------------------------------------------------------------------------------- 
 visitordata.store();
+//
 //
 </script>
 
@@ -289,11 +289,18 @@ bgcolor="#408080">
 	  </td>
         <td width="50%" bgcolor="#408080">
 		<p align="center"><font size="1" face="Verdana">
-			<script language="JavaScript">
-				{
-				document.write('<font size=1'>'+ '<p> You have visited ' + visitordata.visits + ' times.');
-				}
-			</script> </p>
+		<script language="JavaScript">
+			
+			//---------------------------------------------------------------------------------
+			//-- now we can use the state variable we read
+			//---------------------------------------------------------------------------------
+			document.write('You have visited ' + visitordata.visits + ' times.');
+	 		
+		</script>
+		</font></p>
+
+			<!--p align="center"><font size="1" face="Verdana"> -->
+			<!--document.write('<font size=1'>'+ '<p> You have visited ' + visitordata.visits + ' times.'); -->
         </td>
         <td width="35%" bgcolor="#408080">&nbsp;</td>
     </tr>
@@ -311,10 +318,7 @@ bgcolor="#408080">
         href="javascript:popup()"><font size="3" face="Verdana">guestbook</font></a><a
         href="javascript:popup()"></a>&nbsp;</p>
         </td>
-        <td width="35%" bgcolor="#408080"><p align="left"><a
-        href="javascript:closeCanvas()"><font size="3"
-        face="Verdana">exit</font></a></p>
-        </td>
+        <td width="35%" bgcolor="#408080">&nbsp;</td>
     </tr>
 </table>
 </body>
