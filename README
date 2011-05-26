@@ -21,7 +21,7 @@ git checkout master
 git merge <git branch>
 ...
 
-This labor intensive process has correctly segrated the point in time snapshots that eh Subversion
+This labor intensive process has correctly segregated the point in time snapshots that eh Subversion
 branches (rel-1.0, rel-2.0, ..., rel-15.0) represented.
 
 Now that the archive properly exists in Git the next step is to start cataloging the various WordPress
